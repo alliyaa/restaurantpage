@@ -1,24 +1,29 @@
-import './style.css';
-import Pic from './pic.jpg';
+import { showHomePage } from "./home";
+import { showMenuPage } from "./menu";
 
+const homeButton = document.getElementById('home');
+const menuButton = document.getElementById('menu');
+const contactButton = document.getElementById('contact');
+const contentDiv = document.getElementById('content');
 
-function AddPic()
-{
-  const picDiv = document.getElementById('content');
-  const myPic = new Image();
-  myPic.src = Pic;
-  picDiv.appendChild(myPic);
+homeButton.addEventListener('click', () => {
+    clearContent();
+    showHomePage();
+});
 
-  return picDiv;
+menuButton.addEventListener('click', () => {
+    clearContent();
+    showMenuPage();
+});
+
+contactButton.addEventListener('click', () => {
+    clearContent();
+    showContactPage();
+});
+
+function clearContent() {
+    contentDiv.innerHTML = "";
 }
 
-document.body.appendChild(AddPic());
 
-
-function RestaurantInfo()
-{
-    const Rhome = document.getElementById('content');
-    Rhome.classList.add('Rhome');
-    Rhome.innerHTML+=" I am a potato";
-}
-document.body.appendChild(RestaurantInfo());
+showHomePage();

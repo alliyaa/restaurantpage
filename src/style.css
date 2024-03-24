@@ -11,12 +11,25 @@ button{
     color: white;
     margin-right:6rem;
     border-radius: 1rem;
+    margin-bottom: 2rem;
 }
 
-img{
-    max-height:34.5rem;
-    margin-top:3rem;
+
+
+.HomeTextDiv
+{
+margin-left:40rem;
+line-height: 2;
+margin-top: 4rem;
+font-size: 1.05rem;
+}
+
+.HomePic img{
+    max-width: 30rem;
+    max-height: 30rem;
     border-radius: 2rem;
+    margin-left: 5rem;
+    float:left;
 }
 
 img:hover
@@ -24,8 +37,31 @@ img:hover
     transform: scale(0.98);
 }
 
-.Rhome > p
+.MenuPic > img
 {
-    text-align: center;
-    background-color: aqua;
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 2rem;
+    margin-left: 5rem;
+    float:left;
+    margin-top: 10rem;
+
+}
+
+.MenuHeading
+{
+    color: rgb(11, 11, 75);
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    margin-left:15rem;
+  
+}
+
+
+.MenuItems
+{
+margin-left:40rem;
+line-height: 2;
+margin-top: 4rem;
+font-size: 1.05rem;
 }
