@@ -1,5 +1,6 @@
 import { showHomePage } from "./home";
 import { showMenuPage } from "./menu";
+import { showContactPage } from "./contact";
 
 const homeButton = document.getElementById('home');
 const menuButton = document.getElementById('menu');
